@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+    <html lang="es" data-bs-theme="dark">
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!--agregamos libreria boostrap-->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+            <link rel="stylesheet" href="styleqs.css">
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+             integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous">
+            </script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous">
+            </script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+         crossorigin="anonymous">
+        </script>
+             <!--cierre llamamiento de libreria boostrap-->
+        <title>Ing.Alex Trujillo Vera | Desarrollador Wordpress | Optimizacion Web</title>
+    </head>
+        <!--cierre head-->
+
+        <!--abrimos body-->
+        <body>
+        <!--insercion de menu con boostrap-->
+	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="index.html">Inicio</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" href="quiensoy.html">¿Quién Soy?</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="registro.html">Registro</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="contacto.html">Contacto</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="login.html">Login</a>
+					</li>
+					</ul>
+						<form class="d-flex" role="search">
+							<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+							<button class="btn btn-outline-success" type="submit">Buscar</button>
+						</form>
+		     </div>
+		</div>
+	</nav>
+	<!--cierre de menu con boostrap-->
+    
+    <!--abre division con el titulo de la pagina-->
+    <hr>
+        <div class="container text-center">
+         <nav>
+            <h1>Bienvenidos Soy Alex Trujillo Vera</h1>
+            <h2>Programador Web Con Mas De 3 Años De Experiencia en el maquetado Web</h2>
+        </nav>
+    </hr>
+    <!--cierra division con el titulo de la pagina-->
+    
+    <!--Abre Acordeon con la reseña de quien soy -->
+        <div class="container">
+        <div class="accordion" id="accordionExample">
+            <div class="item">
+                <div class="item-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            ¿De Donde Vengo?
+                            <i class="fa fa-angle-down"></i>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="t-p">
+                        Soy Nacido en la bella ciudad de bucaramanga en el año 1991, en ese entonces en la clinica RAMON GONZALEZ VALENCIA,
+                        Ahora HOSPITAL UNIVERSITARIO DE SANTANDER.
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Mis Estudios
+                            <i class="fa fa-angle-down"></i>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="t-p">
+                        Despues De Vivir en ciudades colombianas como, *Bogota, *Bucaramanga, *Cali, llegamos con mi familia a la ciudad de ibagué
+                        y fue alli donde termine mi ciclo de bachillerato, ya me perfilaba como un apasionado a la informatica y la tecnologia.
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Estudios Universitarios
+                            <i class="fa fa-angle-down"></i>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="t-p">
+                        Comencé mi carrera universitaria en la FUNDACION UNIVERSITARIA SAN MARTIN, y logro mi proposito de terminar mi carrera
+                        en tan solo 4 años, lo cual me llena de orgullo y emocion, ya que fui reconocido como el mejor estudiante por mis logros 
+                        obtenidos
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header" id="headingFour">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Últimos Estudios
+                            <i class="fa fa-angle-down"></i>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="t-p">
+                        Ahora gracias a un convenio de la UDEA - ICETEX, logro obtener una beca en programación, lo cual estoy muy contento 
+                        de adelantar estos estudios ya que para mi, el estudio es unas de mis pasiones, los cuales realizo con mucho
+                        entusiasmo y me llena de mucha emoción compartir con nuevas personas este maravillo mundo de la programación.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!--cierra Acordeon con la reseña de quien soy -->
+</body>
+<!--Cierra el body-->
+<!--abrimos el footer del index-->
+	<footer>
+        <div class="container text-center">
+		<div class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
+			  <div class="text-white mb-3 mb-md-0">
+				Todos Los Derechos reservados® Gracias A UDEA-Docente Juan Pablo Angulo -2023.
+			  </div>
+		</div>
+	</footer>
+	<!--abrimos el footer del index-->
+</html>
