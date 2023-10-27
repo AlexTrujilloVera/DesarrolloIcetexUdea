@@ -20,6 +20,10 @@ let listaProductos = [
 ];
 function hiceClick(id){
   eCommerceShop.agregarItem(id);
+}
+
+function eliminarClick(id){
+  eCommerceShop.EliminarItem(id);
 
 }
 
@@ -39,7 +43,7 @@ function mostrarProductos() {
       ${listaProductos[i].descripcion}
       </p>
       <p class="card-text">${listaProductos[i].precio}</p>
-    <a href="#" class="btn btn-primary" onclick="hiceClick();">Comprar</a>
+    <a href="#" class="btn btn-primary" onclick="hiceClick(${i});">Comprar</a>
     </div>
     </div>`;
     productosCodigoHTML += producto;
