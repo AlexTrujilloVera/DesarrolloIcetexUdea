@@ -16,6 +16,10 @@
 <!--DECLARAMOS EL TITULO DE DOCUMENTO-->
 	<title>Ing.Alex Trujillo Vera | Desarrollador Wordpress | Optimizacion Web</title>
 <!--CERRAMOS EL TITULO DE DOCUMENTO-->
+
+<!--invocamos archivos js-->
+<script src="./validador.js" defer></script>
+
 </head>
 
 <body>
@@ -100,14 +104,17 @@
 
 			<!-- INGRESO CON CORREO ELECTRONICO-->
 				<div class="form-outline mb-4">
-				  <input type="email" id="form3Example3" class="form-control form-control-lg"
-					placeholder="Ejemplo@dominio.com" />
+					<label for="mail">
+						Ingresa Un Correo Electronico Valido:
+					  </label>
+					<input type="email" id="mail" class="form-control form-control-lg"
+					placeholder="Ejemplo@dominio.com" required minlength="8" maxlength="15" name="mail" id/>
 				  <label class="form-label" for="form3Example3">Correo Electronico</label>
 				</div>
 	  		<!-- INGRESO DE CONTRASEÑA-->
 				<div class="form-outline mb-3">
 				  <input type="password" id="form3Example4" class="form-control form-control-lg"
-					placeholder="Ingrese Contraseña" />
+					placeholder="Ingrese Contraseña" required minlength="8" maxlength="15"/>
 				  <label class="form-label" for="form3Example4">Contraseña</label>
 				</div>
 	  		<!-- CHECKBOX DE RECORDAR CONTRASEÑA-->
