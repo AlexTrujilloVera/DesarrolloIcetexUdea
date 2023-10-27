@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-		<link rel="stylesheet" href="stylehome.css">
+		<link rel="stylesheet" href="stylehome.css" defer>
 		<title>Ing.Alex Trujillo Vera | Desarrollador Wordpress | Optimizacion Web</title>
 <!--agregamos libreria boostrap-->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -14,74 +14,44 @@
 	</script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"defer></script>
 <!--cierre llamamiento de libreria boostrap-->
+
 <!--invocamos archivos js-->
-<script src="./listado.js" defer></script>
-<script src="./carrodecompras.js" defer></script>
+<script src="./carrito.js" defer></script>
+<script src="./lista.js" defer></script>
 	</head>
 <!--cerramos las invocaciones de los archivos js-->
 
 <!---cierre del head-->
 	<body>
-		<h1>CATALOGO DE PRODUCTOS Y SERVICIOS</h1>
-<!--contenedor con el catalogo de los productos-->
-	<div class="container servicios d-flex=" id="Catalogoproductos">
-<!--grupo de tarjeta con los 1er producto que se tienen disponibles para la compra-->
-<div class="row row-cols-md-4">
-		<div class="card text-center" >
-		<img src="./images/ventahosting.jpg" alt="">
-		<div class="card-body">
-				<h5>Compra Tu Dominio Y Hosting</h5>
-				<p>¿Estás buscando un servicio de hosting y dominio para tu página web? Entonces, no busques más y elige ya. 
-					Tenemos hosting seguro, rápido y confiable, con un dominio personalizado y fácil de recordar. 
-					Además, soporte técnico las 24 horas, los 7 días de la semana, para resolver cualquier problema que puedas tener.
-				</p>
+		<h1>TIENDA</h1>
+		<div class="container catalogo d-flex" id="Catalogo-productos">
+			<div class="card d-flex" style="width: 18rem">
+			<img src="./images/creacionpaginas.jpg" 
+			class="card-img-top d-flex align-self-center" 
+			alt="..."/>
+			<div class="card-body">
+				<h5 class="card-title">card title></h5>
+				<p class="card-text">lorem</p>
+				<p class="card-text">$10.000</p>
+			<a href="#" class="btn btn-primary">go</a>
+			</div>
+			</div>
 		</div>
-		  <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
+		<div class="carrito-compras">
+			<div class="carrito-compras-titulo">
+			<h2>CARRITO COMPRAS</h2>
+			</div>
+					<div class="carrito-compras-items">
+					<ul class="list-group list-group-flush" id="carrito-compras-lista">
+					<li class="list-group-item d-flex flex-row justify-content-evenly align-item-center">
+						<p>Pagina Web</p> 
+						<p><i>$10.000</i></p>
+						<button type="button" class="btn btn-danger">ELiminar</button>
+					</li>
+					</ul>		
+				</div>
+			</div>
 		</div>
-<!---grupo de tarjeta con el 2o producto que se tienen disponibles para la compra-->
-		<div class="card text-center">
-			  <img src="./images/creacionpaginas.jpg" alt="...">
-			  <div class="card-body">
-				<h5>Tu Página Web Al Instante</h5>
-				<p>¿Te gustaría tener una página web que refleje tu personalidad, tu negocio o tu pasión? 
-					Si la respuesta es sí, estás en el lugar correcto. Yo puedo ayudarte a crear una página web profesional, 
-					atractiva y funcional, que se adapte a tus necesidades y objetivos.  
-					¿Qué esperas? Contáctame hoy mismo y empecemos a trabajar en tu proyecto.
-				</p>
-			  </div>
-			  <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a> 
-		</div>
-<!--grupo de tarjeta con el 3a producto que se tienen disponibles para la compra-->
-		<div class="card text-center">
-			  <img src="./images/posicionamiento.jpg" alt="...">
-			  <div class="card-body">
-				<h5>Se Primero En Google</h5>
-				<p>¿Quieres que tu página web sea más visible y atraiga más clientes? Entonces necesitas una buena estrategia de posicionamiento web. 
-					mejoraras el ranking de tu sitio en los motores de búsqueda, optimizar el diseño, el contenido y aumentar el tráfico. No esperes más y 
-					Juntos haremos que tu página web destaque entre la competencia.
-				</p>
-			  </div>
-			  <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a> 
-		</div>
-	</div>
-</div>
-<!--cierra el grupo de tarjetas-->
-
-<!--seccion del carrito de compras--->
-<div class="carrito-compras">
-	<div class ="carrito-compras-titulo">
-			<h2>🛍️Mis Compras 🛒</h2>
-	</div>
-<div class="carrito-compras-items">
-		<ul class="list-group list-group-flush" id="carrito-compras-lista">
-			<li class="list-group-item d-flex flex-row justify-content-evenly align-items-center">
-				<img class="item-img" alt="..."/>
-				<p>Dominio Y Hosting</p>
-				<p>$320000</p>
-			<button type="button" class="btn btn-outline-danger">Eliminar</button>
-			</li>
-		</ul>
-	</div>
 	</div>
 	</body>
 	</html>

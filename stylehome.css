@@ -32,3 +32,8 @@ body {
 	height: 50px !important;
 	border-radius: 40px 40px 0px 0px;
 }
+.card {
+	height: auto;
+	max-height: 500px;
+	
+}
