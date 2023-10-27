@@ -18,9 +18,10 @@ let listado = [
         img:"",       
 },
 ];
-
+let comercio = new carrito(listado);
 function hiceclick(id){
-  console.log("diste click", id);
+  event.preventDefault();
+  console.log("diste click", id="");
 comercio.agregaritem(id);
 }
 function eliminarclick(id){
@@ -28,6 +29,7 @@ comercio.eliminaritem(id);
 }
 function mostrarproductos() {
     let productoscodigohtml = "";
+    console.log("called");
     for (let i = 0; i < listado.length; i++) {
       let producto = `<div class="row row-cols-1 row-cols-md-4 g-1">
       <div class="card text-center" >
@@ -45,7 +47,7 @@ function mostrarproductos() {
         </div>`;
       productoscodigohtml += producto;
     }
-    document.getElementById("catalogo-productos").innerHTML = productoscodigohtml;
+    document.getElementById("Catalogoproductos").innerHTML = productoscodigohtml;
   }
    mostrarproductos();
-let comercio = new carrodecompras(listado);
+

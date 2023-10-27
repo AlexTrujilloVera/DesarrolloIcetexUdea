@@ -21,8 +21,7 @@ class carrito{
             <img 
             src="${this.itemseleccionados[i].img}" 
             class="item-img" 
-            alt="..."
-            />
+            alt="..."/>
             <p>${this.itemseleccionados[i].name}</p>
             <p><i>${this.itemseleccionados[i].precio}</i></p>
           <button type="button" class="btn btn-outline-danger" onclick="eliminarclick(${i});">Eliminar</button>
