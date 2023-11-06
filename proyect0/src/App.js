@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import './App.css';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import index from "./index.js";
@@ -7,6 +6,7 @@ import login from "./Routes/login";
 import quiensoy from "./Routes/quiensoy";
 import registro from "./Routes/registro";
 import carrito from "./Routes/carrito";
+
 
 function App() {
   return (
