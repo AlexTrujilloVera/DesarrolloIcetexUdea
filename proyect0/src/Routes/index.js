@@ -1,33 +1,8 @@
-<!DOCTYPE html>
-<html lang="es" data-bs-theme="dark">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Ing.Alex Trujillo Vera | Desarrollador Wordpress | Optimizacion Web</title>
-		<link rel="stylesheet" href="style-index.css">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" defer rel="stylesheet"
-		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-		<script src="./listado.js" defer></script>
-		<script src="./carrodecompras.js" defer></script>
-		<script src="./index.js" defer></script>
-		<script src="./json.js" defer></script>
-    	<script src="./react.js"></script>
-
-	</head>
-
-
-	<body>
-		<!--agregamos libreria boostrap-->
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-		crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-		crossorigin="anonymous"></script>
-		</script>
-	<!--cierre llamamiento de libreria boostrap-->
-	
-	<!--insercion de menu con boostrap-->
+import index from "./index";
+function index(){
+   return ( 
+   <>
+   <index></index>
 	<nav class="navbar navbar-expand-lg bg-body-tertiary">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="index.html">Inicio</a>
@@ -55,28 +30,23 @@
 					</li>
 					</ul>
 						<form class="d-flex" role="search">
-							<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+							<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>
 							<button class="btn btn-outline-success" type="submit">Buscar</button>
 						</form>
 		     </div>
 		</div>
 	</nav>
-	<!--cierre de menu con boostrap-->
 	
 	<div class="container text-center">
-		<!--abre division con el titulo de la pagina-->
 		<hr>
 		<nav>
 			<h1>Bienvenidos Soy Alex Trujillo Vera</h1>
 			<h2>Programador Web Con Mas De 3 Años De Experiencia En El Maquetado Web </h2>
 		</nav>
 		</hr>
-		<!--cierra division con el titulo de la pagina-->
 	</div>
-	<hr>
-	<!--Abrimos una clase contenedor-->
+	<hr></hr>
 	<div class="container text-center">
-				<!--apertura de servicios con las tarjetas-->
 		<div class="row">
 			<div class="col-sm-6">
 				<div class="card">
@@ -94,7 +64,6 @@
 					</div>
 				</div>
 			</div>
-				<!--Tarjeta 2-->
 			<div class="col-sm-6">
 				<div class="card">
 					<div class="card-body">
@@ -110,7 +79,6 @@
 					</div>
 				</div>
 			</div>
-				<!----tarjeta 3 -->
 			<div class="col-sm-12">
 				<div class="card">
 					<div class="card-body">
@@ -129,23 +97,7 @@
 			</div>
 		</div>
 	</div>
-	<!--cerramos los servicios con las tarjetas-->
-
-	<!---->
-	<section></section>
-	<section></section>
-	<!---->
-</body>
-	<!--cerramos el body del index-->
-	
-	<!--abrimos el footer del index-->
-	<div class="container text-center">
-	<footer>
-		<div class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
-			  <div class="text-white mb-3 mb-md-0">
-				Todos Los Derechos reservados® Gracias A UDEA-Docente Juan Pablo Angulo -2023.
-			  </div>
-		</div>
-	</footer>
-	<!--abrimos el footer del index-->
-</html>
+   </>
+    );
+}                    
+export default Home;
