@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 function ProductElement(props){
     
     function addToCart(){
@@ -23,6 +25,7 @@ function ProductElement(props){
 }
 
 export default function ProductList(props){
+    const [products,setProducts] = useState([products]);
     let products = [{
         name:"dominios y hosting",
         price: 400,
@@ -40,7 +43,22 @@ export default function ProductList(props){
     },
 
 ];
-    return(
+useEffect(()=>{
+   fetch("www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita" ,
+   Headers:{
+    accept:"application/json",
+   },
+   method:"GET",
+   Node: "cors",
+})
+   .then(response => response.json())
+    .then ((data)) =>{
+      products.push({
+        name:data.strDrink, 
+        description:`Tiene${data.strCategory.lenght}`,
+    });
+    },[]; 
+   return(
         <div className="col-8 f-flex-wrap justify-content-around">
             <h3 className="col-12 d-flex justify-content-center">Catalogo</h3>
             {products.map(products) => {

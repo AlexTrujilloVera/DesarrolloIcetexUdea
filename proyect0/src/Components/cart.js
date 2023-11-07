@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { json } from "react-router-dom";
 
 function Producto(props){
     return(
@@ -13,14 +14,28 @@ function Producto(props){
 }
 
 export default function Cart(props){
-    const[total, setTotal] = useState(0);
+   let total = 0;
+
+   function pay(){
+    let venta = {
+        products: props.selectItems,
+        total: total,
+    }
+fetch("/pay",{
+    headers:{
+        "Content-type": "Application/json",
+    },
+method:"POST",
+    body:JSON.stringify(venta),
+});
+}
     return(
         <div className="col-4 mh-100" style = {{maxHeight:300 + "px !important"}}>
         <h2 className="d-flex justify-content-center">carrito compras</h2>
         <ol class="list-group list-group-numbered" id="list">
         {props.selectedItems.map(item) => {
-            setTotal(total + item.price)
-                return (
+            total += item.price;
+                  return (
                     <Producto 
                     name={item.name} 
                     description={item.description}
@@ -32,7 +47,7 @@ export default function Cart(props){
             <div className="d-flex justify-content-evenly col-12 mt-2">
                 <button type="button" class="btn btn-outline-dark">
                     total:{total}</button>
-                <button type="button" class="btn btn-sucess">PAGAR</button>
+                <button type="button" class="btn btn-sucess" onClick={pay}>PAGAR</button>
             </div>
          </div>
     );
