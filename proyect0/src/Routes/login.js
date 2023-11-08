@@ -5,7 +5,7 @@ function Login(){
     function enviardatos(){
         event.preventDefault();
 
-        fetch("/login",{
+        fetch("/login"),{
             method:"post",
             headers:{
                 "Content-type": "Application/json",
